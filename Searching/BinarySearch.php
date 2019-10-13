@@ -1,11 +1,10 @@
 <?php
 // Binary search function to find element in array
 function binarySearch($arr, $value) 
-{ 
-    if (count($arr) === 0) return false; 
+{
     $low_value = 0; 
     $high_value = count($arr) - 1;       
-    while ($low_value < $high_value+1) { 
+    for($i= $low_value ; $i < $high_value+1 ; ){ 
         $mid_value = floor(($low_value + $high_value) / 2); 
         if($arr[$mid_value] == $value) { 
             return true; 
