@@ -1,5 +1,6 @@
 <?php
 // Binary search function to find element in array
+// Binary search always apply on sorted array
 function binarySearch($arr, $value) 
 {
     $low_value = 0; 
